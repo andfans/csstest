@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>CSSTest18</title>
+  </head>
+  <style>
+    h2.pos_left {
+      position: relative;
+      left: -20px;
+    }
+    h2.pos_right {
+      position: relative;
+      left: 20px;
+    }
+    h2.pos_top {
+      position: relative;
+      top: -50px;
+    }
+    h2.absolute {
+      position: absolute;
+      left: 100px;
+      top: 50px;
+    }
+  </style>
+  <body>
+    <h2>这是位于正常位置的标题</h2>
+    <h2 class="pos_left">这是位于正常位置的标题</h2>
+    <h2 class="pos_right">这个标题相对于正常位置向左移动</h2>
+    <h2>这个标题相对于正常位置向右移动</h2>
+    <p>正常位置</p>
+    <p>正常位置向左20像素</p>
+    <p>正常位置向右20像素</p>
+    <h2>这是一个没有定位的标题</h2>
+    <h2 class="pos_top">这个标题是根据正常位置向上移动</h2>
+    <p>
+      <b>注意：</b>即使相对定位元素的内容是移动,预留空间的元素仍保存在正常流动。
+    </p>
+    <h2 class="absolute">这是一个绝对定位了的标题</h2>
+    <p>
+      用绝对定位,一个元素可以放在页面上的任何位置。标题下面放置距离左边的页面100
+      px和距离页面的顶部150 px的元素。.
+    </p>
+  </body>
+</html>

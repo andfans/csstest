@@ -7,11 +7,56 @@
       h1.hidden {
         visibility: hidden;
       }
+      h1.anotherhidden {
+        display: none;
+      }
+      li {
+        display: inline;
+      }
+      span {
+        display: block;
+      }
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+      }
+      tr.collapse {
+        visibility: collapse;
+      }
     </style>
   </head>
   <body>
     <h1>这是一个可见的标题</h1>
     <h1 class="hidden">这是一个隐藏的标题</h1>
+    <h1 class="anotherhidden">另外一个隐藏的标题</h1>
     <p>这里是另外一行3344。</p>
+    <p>连接列表水平显示：</p>
+    <ul>
+      <li><a href="/html/" target="_blank">HTML</a></li>
+      <li><a href="/css/" target="_blank">CSS</a></li>
+      <li><a href="/js/" target="_blank">JS</a></li>
+      <li><a href="/xml/" target="_blank">XML</a></li>
+    </ul>
+    <h2>Nivarna</h2>
+    <span>Record: MTV Unplugged in New York</span>
+    <span>Year: 1993</span>
+    <h2>Radiohead</h2>
+    <span>Record: OK Computer</span>
+    <span>Year: 1997</span>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+      </tr>
+      <tr class="collapse">
+        <td>Lois</td>
+        <td>Griffin</td>
+      </tr>
+    </table>
   </body>
 </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>CSSTest19</title>
+    <style>
+      /* img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+      } */
+      img.clip {
+        position: relative;
+        /* top: 50px; */
+        clip: rect(0px, 60px, 200px, 0px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading!</h1>
+    <!-- <img src="images/w3css.gif" alt="" width="100" height="140" /> -->
+    <p>因为图像元素设置了 z-index 属性值为 -1, 所以它会显示在文字之后。</p>
+    <img src="images/w3css.gif" class="clip" alt="" width="200" height="280" />
+  </body>
+</html>
