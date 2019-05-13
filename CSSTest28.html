@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>CSSTest28</title>
+    <style>
+      div {
+        border: 3px solid #4caf50;
+        padding: 5px;
+      }
+      .img1 {
+        float: right;
+      }
+      .img2 {
+          float: right;
+      }
+      .clearfix {
+          overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <p>以下实例图在父元素中溢出，很不美观:</p>
+    <div>
+      <img
+        class="img1"
+        src="images/pineapple.jpg"
+        alt=""
+        width="170"
+        height="170"
+      />
+      菜鸟教程 - 学的不仅是技术，更是梦想！！！
+    </div>
+    <p style="clear: right;"></p>在父元素上通过添加 clearfix 类，并设置 overflow: auto; 来解决该问题:</p>
+    <div class="clearfix"><img class="img2" src="images/pineapple.jpg" alt="pineapple" width="170" height="170">菜鸟教程 - 学的不仅是技术，更是梦想！！！</div>
+    <div class="center">
+        
+    </div>
+  </body>
+</html>
