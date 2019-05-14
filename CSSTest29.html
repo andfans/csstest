@@ -3,11 +3,26 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <title>CSSTest29</title>
+    <style>
+      .center {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+      }
+      .center p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
     <h2>垂直居中</h2>
     <p>以上实例，我们使用 padding 属性实现元素的垂直居中：</p>
-    <div class="">
+    <div class="center">
       <p>我是垂直居中的。</p>
     </div>
   </body>
