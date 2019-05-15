@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>CSSTest49</title>
+    <style>
+      @media screen {
+        p.test {
+          font-family: verdana, sans-serif;
+          font-size: 14px;
+        }
+      }
+      @media print {
+        p.test {
+          font-family: times, serif;
+          font-size: 10px;
+        }
+      }
+      @media screen, print {
+        p.test {
+          font-weight: bold;
+        }
+      }
+      [title] {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="test">菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+    <h2 title="Hello world">Will apply to:</h2>
+    <h1>Hello world</h1>
+    <a href="//www.runoob.com/" title="runoob.com">runoob.com</a>
+    <hr />
+    <h2>Will not apply to:</h2>
+  </body>
+</html>

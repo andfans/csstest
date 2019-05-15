@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>CSSTest</title>
+    <style>
+      [title~="hello"] {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>将使用：</h2>
+    <h1 title="hello world">Hello world</h1>
+    <p title="student hello">Hello CSS students!</p>
+    <hr />
+    <h2>将不适用：</h2>
+    <p title="student">Hi CSS students!</p>
+  </body>
+</html>
